@@ -1,0 +1,111 @@
+.feedback {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.wrapper {
+  max-width: 780px;
+  margin: 0 auto;
+  background-color: #f2f0f1;
+  border-radius: 20px;
+}
+
+.feedback__content {
+  padding: 50px 100px;
+  text-align: center;
+}
+
+.feedback__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.33333;
+  color: #ff8a00;
+  margin-bottom: 30px;
+}
+
+.feedback__text {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.feedback__span {
+  font-weight: 500;
+  color: #ff8a00;
+}
+
+.feedback__address {
+  margin-bottom: 30px;
+
+}
+
+.address__link {
+  display: block;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2; 
+}
+
+.address__link::before {
+  vertical-align: top;
+  margin-right: 6px;
+}
+
+.address__tel::before {
+  content: url("../img/call.svg");
+}
+
+.address__mail::before {
+  content: url("../img/email.svg");
+}
+
+.form__text {
+  margin-bottom: 15px;
+}
+
+.form__list {
+  width: 280px;
+  margin: 0 auto 35px;
+}
+
+.form__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form__label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16667;
+  text-align: left;
+}
+
+.form__input {
+  border-color: transparent;
+  width: 100%;
+  min-height: 40px;
+  padding: 0 10px;
+}
+
+.form__button {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33333;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ff8a00;
+  background: #282626;
+  width: 220px;
+  height: 40px;
+}
+
+.form__button:hover {
+  color: #f5b975;
+}
+
+.form__button:focus {
+  outline-color: #794102;
+}
+
+.form__button:active {
+  color: #f7d8b4;
+}

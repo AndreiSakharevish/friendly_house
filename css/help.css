@@ -1,0 +1,71 @@
+.help {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.help__title {
+  font-size: 50px;
+  color: #FF8A00;
+  text-align: center;
+  margin-bottom: 127px;
+}
+
+.item-help__subtitle {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.item-help__subtitle_margin_36px {
+  margin-bottom: 36px;
+}
+
+.item-help__subtitle_margin_80px {
+  margin-bottom: 80px;
+}
+
+.item-help__subtitle_margin_30px {
+  margin-bottom: 30px;
+}
+
+/* ?сюда добавил */
+.help__list {
+  list-style: none;
+  padding-left: 60px;
+  counter-reset: item;
+}
+
+.help__item {
+  counter-increment: item;
+  padding-left: 58px;
+}
+
+.help__item::marker {
+  content: counter(item)"";
+  display: block;
+  font-size: 50px;
+  color: #FF8A00;
+}
+
+.help__item:not(:last-child) {
+  margin-bottom: 131px;
+}
+
+.text_medium {
+  font-weight: 500;
+}
+
+.item-help:nth-child(1) {
+  max-width: 379px;
+}
+
+.item-help:nth-child(2) {
+  max-width: 570px;
+}
+
+.item-help:nth-child(3) {
+  max-width: 466px;
+}
