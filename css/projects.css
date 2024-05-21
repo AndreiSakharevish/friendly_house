@@ -1,7 +1,7 @@
 .projects__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   column-gap: 120px;
   grid-template-areas:
     "content banner"
@@ -71,10 +71,11 @@
 /* ------------- */
 .banner {
   display: grid;
-  grid-template-columns: 380px 360px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   padding-top: 10px;
   margin-bottom: 52px;
-  grid-area: banner;
+
 }
 
 .banner__picture {
@@ -102,12 +103,11 @@
 }
 
 .banner__link {
-  margin-left: 80px;
+  padding: 0px 0px 0px 80px;
 }
 
 /* ---------------- */
 .big-progect {
-  max-width: 380px;
   grid-area: big-progect;
 }
 
@@ -120,7 +120,7 @@
 
 .big-progect__gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
 }
@@ -129,3 +129,20 @@
   max-width: 80px;
   object-fit: cover;
 }
+
+/* ---------------------- */
+@media (max-width: 1024px) {
+  .projects__title {
+    font-size: 44px;
+  }
+
+  .projects__container {
+    column-gap: 20px;
+  }
+
+}
+
+
+@media (max-width: 768px) {}
+
+@media (max-width: 320px) {}
