@@ -1,5 +1,15 @@
-.projects__content{
+.projects__container {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 120px;
+  grid-template-areas:
+    "content banner"
+    "content big-progect";
+}
+
+.projects__content {
+  grid-area: content;
 }
 
 /* ------------ */
@@ -62,7 +72,9 @@
 .banner {
   display: grid;
   grid-template-columns: 380px 360px;
-  grid-template-rows: 450px 117px;
+  padding-top: 10px;
+  margin-bottom: 52px;
+  grid-area: banner;
 }
 
 .banner__picture {
@@ -73,7 +85,6 @@
 .banner__img {
   max-width: 380px;
   object-fit: cover;
-
 }
 
 .banner__block {
@@ -97,6 +108,7 @@
 /* ---------------- */
 .big-progect {
   max-width: 380px;
+  grid-area: big-progect;
 }
 
 .big-progect__title {

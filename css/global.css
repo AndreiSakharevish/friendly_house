@@ -100,7 +100,11 @@ iframe {
   padding: 0 30px;
   margin: 0 auto;
 }
-
+.projects,
+.pets{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .title {
   font-family: "Comfortaa", sans-serif;
   font-weight: 400;
