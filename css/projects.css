@@ -12,25 +12,39 @@
   grid-area: content;
 }
 
-/* ------------ */
+/* --------------- */
+
 .projects__figure {
   display: grid;
-  max-width: 680px;
   grid-template-columns: 280px 380px;
-  grid-template-rows: 1fr;
+  grid-template-rows: 180px;
   column-gap: 20px;
+  grid-area: img;
   grid-template-areas:
     "img figcaption";
 }
 
-.projects__figure:not(:last-child) {
-  margin-bottom: 30px;
+/* ------------------ */
+.projects__figure_img-home {
+  background: url('../img/projects/new_home.jpg') 0 0 / contain no-repeat;
 }
 
-.projects__img {
-  max-width: 280px;
-  object-fit: cover;
-  grid-area: img;
+.projects__figure_img-small {
+  background: url('../img/projects/small_muzzles.jpg') 0 0 / contain no-repeat;
+}
+
+.projects__figure_img-game {
+  background: url('../img/projects/game.jpg') 0 0 / contain no-repeat;
+}
+
+.projects__figure_img-best {
+  background: url('../img/projects/best_photo.jpg') 0 0 / contain no-repeat;
+}
+
+/* ------------ */
+
+.projects__figure:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .figcaption {
@@ -71,21 +85,11 @@
 /* ------------- */
 .banner {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  padding-top: 10px;
+  grid-template-columns: 380px;
+  grid-template-rows: 450px;
+  background: url('../img/projects/best_friend1.png') 0 10px / cover no-repeat;
   margin-bottom: 52px;
-
-}
-
-.banner__picture {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-.banner__img {
-  max-width: 380px;
-  object-fit: cover;
+  grid-area: banner;
 }
 
 .banner__block {
@@ -121,13 +125,22 @@
 .big-progect__gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  /* grid-template-columns: repeat(4, 1fr); */
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
 }
 
+.big-progect__link {
+    height: 70px; 
+}
+
 .big-progect__img {
-  max-width: 80px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+.big-progect__links{
+ display: none;
 }
 
 /* ---------------------- */
