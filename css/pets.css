@@ -54,7 +54,151 @@
   font-size: 20px;
   line-height: 1.3;
 }
+
 /* ---------------- */
-@media (max-width: 1024px) {}
-@media (max-width: 768px) {}
-@media (max-width: 320px) {}
+
+
+@media (max-width: 1024px) {
+  .pets__content {
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(10px, 1fr));
+    gap: 50px 20px;
+  }
+
+  .pets__img {
+    margin-bottom: 10px;
+  }
+
+  .pets__figure:nth-child(1) {
+    height: 201px;
+    grid-column: 1/5;
+  }
+
+  .pets__figure:nth-child(2) {
+    height: 201px;
+    grid-column: 5/7;
+  }
+
+  .pets__figure:nth-child(3) {
+    height: 180px;
+    grid-column: 1/3;
+  }
+
+  .pets__figure:nth-child(4) {
+    height: 180px;
+    grid-column: 3/5;
+  }
+
+  .pets__figure:nth-child(5) {
+    height: 280px;
+    grid-column: 5/7;
+  }
+
+  .pets__figure:nth-child(6) {
+    height: 478px;
+    grid-column: 7/10;
+  }
+
+  .pets__figcaption {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pets__content {
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(10px, 1fr));
+    gap: 50px 24px;
+  }
+  .pets__figure:nth-child(1) {
+    height: 243px;
+    grid-column: 1/7;
+  }
+
+  .pets__figure:nth-child(2) {
+    height: 243px;
+    grid-column: 7/10;
+  }
+
+  .pets__figure:nth-child(3) {
+    height: 332px;
+    grid-column: 1/5;
+    
+  }
+
+  .pets__figure:nth-child(4) {
+    height: 332px;
+    grid-column: 5/10;
+  }
+
+  .pets__figure:nth-child(5) {
+    height: 459px;
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+  }
+
+  .pets__figure:nth-child(6) {
+    height: 647px;
+    grid-column: 5/10;
+    grid-row: 3 / 4;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .pets__figcaption {
+    font-size: 14px;
+  }
+
+  .pets__content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(10px, 1fr));
+        row-gap: 50px;
+  }
+  .pets__figure:nth-child(1) {
+    height: 184px;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+   
+   
+  }
+
+  .pets__figure:nth-child(2) {
+    height: 300px;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+   
+   
+  }
+
+  .pets__figure:nth-child(3) {
+    height: 270px;
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
+   
+   
+    
+  }
+
+  .pets__figure:nth-child(4) {
+    height: 270px;
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+   
+  }
+
+  .pets__figure:nth-child(5) {
+    height: 420px;
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+   
+  }
+
+  .pets__figure:nth-child(6) {
+    height: 460px;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+   
+  }
+
+}
