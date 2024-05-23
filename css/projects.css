@@ -138,6 +138,10 @@
   display: none;
 }
 
+.figcaption__texts {
+  display: none;
+}
+
 /* ---------------------- */
 @media (max-width: 1024px) {
   .projects__container {
@@ -155,8 +159,9 @@
     grid-template-rows: 130px;
   }
 
-  .projects__title {
+  .title {
     font-size: 44px;
+    margin-bottom: 40px;
   }
 
   .figcaption__title {
@@ -184,7 +189,6 @@
     display: none;
   }
 
-
   .projects__container {
     column-gap: 20px;
   }
@@ -193,7 +197,6 @@
     max-width: 280px;
     min-height: 332px;
     background-position: 0 0;
-    /* background-size: 280px 332px; */
     margin-bottom: 33px;
   }
 
@@ -224,11 +227,11 @@
 
 
 @media (max-width: 768px) {
-  .projects__title {
+  .title {
     font-weight: 400;
     font-size: 30px;
     line-height: 1.13333;
-    /* margin-bottom: 30px; */
+    margin-bottom: 30px;
   }
 
   .projects__figure {
@@ -255,19 +258,21 @@
     font-size: 14px;
     line-height: 1.42857;
   }
+
   .banner {
     max-width: 220px;
     min-height: 291px;
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
+
   .banner__block {
-        padding: 191px 0px 0px 23px;
+    padding: 191px 0px 0px 23px;
   }
 
   .banner__text {
     font-weight: 500;
-font-size: 18px;
-line-height: 1.33333;
+    font-size: 18px;
+    line-height: 1.33333;
   }
 
   .banner__link {
@@ -277,28 +282,115 @@ line-height: 1.33333;
   .big-progect__title {
     margin-bottom: 10px;
     font-weight: 500;
-font-size: 14px;
-line-height: 1.42857;
+    font-size: 14px;
+    line-height: 1.42857;
   }
 
   .big-progect__links {
-   
     padding-top: 0px;
   }
+
   .big-progect__gallery {
     grid-template-columns: repeat(3, 60px);
-   
     gap: 20px;
   }
+
   .big-progect__link {
     height: 53px;
   }
+
+  .projects__figure:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
 }
-.projects__figure:not(:last-child) {
-  margin-bottom: 20px;
+
+
+
+@media (max-width: 320px) {
+  .projects__container {
+    column-gap: 120px;
+    grid-template-areas:
+      "content"
+      "banner"
+      "big-progect";
+  }
+
+  .projects__content {
+    margin-bottom: 30px;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .projects__figure {
+    grid-template-columns: 130px 130px;
+    grid-template-rows: 134px;
+    column-gap: 10px;
+
+  }
+
+  .figcaption {
+    padding-top: 0px;
+  }
+
+
+  .figcaption__title {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.375;
+  }
+
+  .figcaption__texts {
+    display: block;
+    margin-bottom: 13px;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  .figcaption__text {
+    display: none;
+  }
+
+  .banner {
+    max-width: 270px;
+    min-height: 320px;
+    margin-bottom: 30px;
+  }
+
+  .banner__block {
+    padding: 225px 10px 10px 10px;
+  }
+
+  .banner__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.375;
+  }
+
+  .banner__link {
+    padding: 0px 0px 0px 135px;
+  }
+
+  .big-progect__gallery {
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: 1fr;
+    gap: 3px 10px;
+  }
+
+  .big-progect__link {
+    height: 52px;
+  }
+
+  .big-progect__link:nth-child(5),
+  .big-progect__link:nth-child(6) {
+    display: none;
+  }
+
+  .big-progect__links {
+    padding: 0px 0px 0px 150px;
+  }
 }
-
-
-
-
-@media (max-width: 320px) {}
