@@ -61,7 +61,7 @@
 @media (max-width: 1024px) {
   .pets__content {
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(auto-fill, minmax(10px, 1fr));
+    grid-template-rows: repeat(2, 338px);
     gap: 50px 20px;
   }
 
