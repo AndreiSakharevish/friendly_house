@@ -237,6 +237,8 @@
   .projects__figure {
     grid-template-columns: 160px 230px;
     grid-template-rows: 104px;
+    background-size: 130px 134px;
+   
   }
 
   .figcaption__title {
