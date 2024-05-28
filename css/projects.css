@@ -4,21 +4,27 @@
   grid-template-rows: 1fr;
   column-gap: 20px;
   grid-template-areas:
-    "content banner"
-    "content big-progect";
+    "content subcontent"
 }
 
 .projects__content {
   grid-area: content;
+  max-width: 680px;
+}
+
+.projects__subcontent {
+  grid-area: subcontent;
+  max-width: 380px;
 }
 
 /* --------------- */
 
 .projects__figure {
   display: grid;
-  grid-template-columns: 280px 380px;
+  grid-template-columns: 280px max-content;
   grid-template-rows: 180px;
   column-gap: 20px;
+  max-width: 680px;
   grid-area: img;
   grid-template-areas:
     "img figcaption";
@@ -50,6 +56,7 @@
 .figcaption {
   grid-area: figcaption;
   padding-top: 5px;
+  max-width: 380px;
 }
 
 .figcaption__title {
@@ -86,15 +93,13 @@
 .banner {
   background: url('../img/projects/best_friend1.png') 0 10px / cover no-repeat;
   margin-bottom: 52px;
-  padding-top: 10px;
-  grid-area: banner;
-  width: 100%;
   max-width: 380px;
   justify-self: end;
 }
 
 .banner__block {
   padding: 293px 10px 0px 10px;
+  width: 100%;
 }
 
 .banner__text {
@@ -110,9 +115,9 @@
 
 /* ---------------- */
 .big-progect {
-  grid-area: big-progect;
-  max-width: 380px;
+  /* grid-area: big-progect; */
   width: 100%;
+  max-width: 380px;
   justify-self: end;
 }
 
@@ -314,12 +319,11 @@
 
 
 
-@media (max-width: 330px) {
+@media (max-width: 500px) {
   .projects__container {
     grid-template-areas:
       "content"
-      "banner"
-      "big-progect";
+      "subcontent"
   }
 
 
@@ -336,7 +340,8 @@
   .projects__figure {
     grid-template-columns: 130px 130px;
     grid-template-rows: 134px;
-    background-size: 130px 134px;
+    background-size: cover;
+    width: 130px;
     column-gap: 10px;
   }
 

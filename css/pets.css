@@ -167,7 +167,7 @@
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 500px) {
   .pets__figcaption {
     font-size: 14px;
   }
