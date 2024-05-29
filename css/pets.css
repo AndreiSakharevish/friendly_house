@@ -107,7 +107,6 @@
 @media (max-width: 768px) {
   .pets__content {
     grid-template-columns: repeat(9, 1fr);
-    /* grid-template-rows: repeat(auto-fit, minmax(150px, 1fr)); */
     grid-template-rows: 282px 384px 726px;
     gap: 30px 27px;
   }
@@ -174,7 +173,7 @@
 
   .pets__content {
     grid-template-columns: 1fr;
-        grid-template-rows: 214px 334px 518px 304px 454px 304px;
+    grid-template-rows: 214px 334px 518px 304px 454px 304px;
     row-gap: 10px;
   }
 
